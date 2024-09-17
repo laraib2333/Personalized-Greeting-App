@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Greeting App</title>
+
+    <!-- CSS Link  -->
+     <link rel="stylesheet" href="./style.css">
+
+     <!-- google font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap" rel="stylesheet">
+
+     <!-- Animation Link -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="background"></div>
+        <div id="content" >
+    <h1 data-aos="fade-up" data-offset="300">Welcome to the Personalized Greeting App</h1>
+  <button onclick="getGreeting()"  data-aos="flip-left"
+  data-aos-easing="ease-out-cubic"
+  data-aos-duration="1500">Get Greeting</button>
+    <p id="greetings" ></p>
+       </div>
+
+    <!-- JavaScript Link -->
+     <script src="./script.js"></script>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+        AOS.init();
+      </script>
+
+</body>
+</html>
